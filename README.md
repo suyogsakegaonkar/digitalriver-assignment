@@ -1,29 +1,29 @@
 ---------------------------------------------------------------------------------------------------------
 	DigitalRiver Assignment
 ---------------------------------------------------------------------------------------------------------
-Project framework is a hybrid framework.
+1. Project framework is a hybrid framework.
 	- data driven
 	- keyword driven
 	- page object model
 	- testNG
 	
-Each scenario has the following
-1. a separate class.
-   i.e. org.openqa.selenium.WebDriver.VerifyPhoneNumberTests
-2. a separate xls.
-   i.e. data/VerifyPhoneNumberTests.xls
+2. Each scenario has the following
+	1. a separate class.
+   		i.e. org.openqa.selenium.WebDriver.VerifyPhoneNumberTests
+	2. a separate xls.
+   		i.e. data/VerifyPhoneNumberTests.xls
    
-All scenarios have a comman Data.xml
+3. All scenarios have a comman Data.xml
    i.e. src/main/resources/xml/Data.xml supported with a src/main/resources/xsd/DataSet.xsd
-When we need to add a new dataset for a specific existing test scenario, add it to Data.xml
-When we want to dataset for new test scenario, we need to add new complextype in DataSet.xsd and run "mvn clean install".
-This will create classes for each complextype. 
-i.e. src/test/generated
-Then add data to the Data.xml
+	When we need to add a new dataset for a specific existing test scenario, add it to Data.xml
+	When we want to dataset for new test scenario, we need to add new complextype in DataSet.xsd and run "mvn clean install".
+	This will create classes for each complextype. 
+	i.e. src/test/generated
+	Then add data to the Data.xml
 
-All the pages related in the test scenario have a separate class. (page object model)
+4. All the pages related in the test scenario have a separate class. (page object model)
 
-Each testcase in test scenario class file is exhibited as follows:
+5. Each testcase in test scenario class file is exhibited as follows:
 e.g.
   @Test(description = "Tests whether a phone number matches a valid pattern.")
   public void checkIsValidNumber() throws Exception {
