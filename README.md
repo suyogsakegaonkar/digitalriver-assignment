@@ -25,6 +25,7 @@
 
 5. Each testcase in test scenario class file is exhibited as follows:
 e.g.
+```
   @Test(description = "Tests whether a phone number matches a valid pattern.")
   public void checkIsValidNumber() throws Exception {
     excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
@@ -36,7 +37,8 @@ e.g.
                      .waitOnDRCustomerSupportPage()
                      .readNumberAndVerifyIsValidNumber();
   // @formatter:on
-  } 
+  }
+``` 
 
 
 ---------------------------------------------------------------------------------------------------------
