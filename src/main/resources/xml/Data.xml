@@ -9,9 +9,23 @@
 		<callingCode>49</callingCode>
 	</countryDetails>
 
+	<countryDetails id="japan">
+		<countryName>Japan</countryName>
+		<isoCode>JP</isoCode>
+		<callingCode>81</callingCode>
+	</countryDetails>
+
 	<googleSearch id="germany">
-		<searchText>phone number of the german digital river office</searchText>
+		<searchText>phone number of the german digital river office
+		</searchText>
 		<linkDescText>phone,number,germany,office</linkDescText>
+		<linkText>digital,river</linkText>
+	</googleSearch>
+
+	<googleSearch id="japan">
+		<searchText>phone number of the japan digital river office
+		</searchText>
+		<linkDescText>phone,number,japan,office</linkDescText>
 		<linkText>digital,river</linkText>
 	</googleSearch>
 

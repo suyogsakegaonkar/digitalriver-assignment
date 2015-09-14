@@ -9,8 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.suyog.digitalriver.generated.GoogleSearch;
-import org.suyog.digitalriver.helper.*;
-import org.suyog.digitalriver.pageobjects.*;
+import org.suyog.digitalriver.helper.XMLDeserializer;
 
 public class GoogleSearchPage extends AbstractPage {
 

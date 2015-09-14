@@ -1,22 +1,21 @@
 package org.suyog.digitalriver.pageobjects;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.suyog.digitalriver.generated.CountryDetails;
+import org.suyog.digitalriver.helper.XMLDeserializer;
 import org.testng.Assert;
 
+import com.google.common.collect.ImmutableList;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
 import com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult;
 import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
 import com.google.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder;
-
-import org.suyog.digitalriver.helper.*;
 
 public class DRCustomerSupportPage extends AbstractPage {
 
@@ -76,7 +75,8 @@ public class DRCustomerSupportPage extends AbstractPage {
       PhoneNumber phoneNumber = phoneUtil.parse(phoneNumberStr, countryDetails.getIsoCode());
       // System.out.println(phoneUtil.isPossibleNumber(phoneNumber));
       // System.out.println(true);
-      Assert.assertEquals(phoneUtil.isPossibleNumberWithReason(phoneNumber), ValidationResult.IS_POSSIBLE);
+      Assert.assertEquals(phoneUtil.isPossibleNumberWithReason(phoneNumber),
+          ValidationResult.IS_POSSIBLE);
       return new DRCustomerSupportPage(excelData, driver);
     } catch (Exception e) {
       e.printStackTrace();
@@ -108,18 +108,29 @@ public class DRCustomerSupportPage extends AbstractPage {
       String phoneNumberStr = readNumber(countryDetails);
       PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
       PhoneNumber phoneNumber = phoneUtil.parse(phoneNumberStr, countryDetails.getIsoCode());
-      List<String> numberTypes = new ArrayList<String>();
-      numberTypes.add("FIXED_LINE");
-      numberTypes.add("MOBILE");
-      numberTypes.add("TOLL_FREE");
-      numberTypes.add("PREMIUM_RATE");
-      numberTypes.add("SHARED_COST");
-      numberTypes.add("VOIP");
-      numberTypes.add("PERSONAL_NUMBER");
+      final ImmutableList<String> numberTypes =
+          ImmutableList.of("FIXED_LINE", "MOBILE", "FIXED_LINE_OR_MOBILE", "TOLL_FREE",
+              "PREMIUM_RATE", "SHARED_COST", "VOIP", "UAN", "PAGER", "PERSONAL_NUMBER");
       // System.out.println(numberTypes.contains(phoneUtil.getNumberType(phoneNumber).toString()));
       // System.out.println(true);
       Assert.assertEquals(numberTypes.contains(phoneUtil.getNumberType(phoneNumber).toString()),
           true);
+      return new DRCustomerSupportPage(excelData, driver);
+    } catch (Exception e) {
+      e.printStackTrace();
+      return null;
+    }
+  }
+
+  public DRCustomerSupportPage readNumberAndVerifyE164StdSatisfied() {
+    try {
+      CountryDetails countryDetails = XMLDeserializer.getPageData("countryDetails");
+      String phoneNumberStr = readNumber(countryDetails);
+      PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+      PhoneNumber phoneNumber = phoneUtil.parse(phoneNumberStr, countryDetails.getIsoCode());
+//      System.out.println(phoneUtil.format(phoneNumber, PhoneNumberFormat.E164));
+      String E164PhoneNumberFormat = phoneUtil.format(phoneNumber, PhoneNumberFormat.E164);
+      Assert.assertEquals(E164PhoneNumberFormat.equals("invalid"), false);
       return new DRCustomerSupportPage(excelData, driver);
     } catch (Exception e) {
       e.printStackTrace();

@@ -21,6 +21,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
   @BeforeMethod
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
+    driver.manage().window().maximize();
   }
 
   @Test(description = "Validates the country code for a phone number.")
@@ -87,6 +88,19 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
                      .verifySearchAndClick()
                      .waitOnDRCustomerSupportPage()
                      .readNumberAndVerifyNumberType();
+  // @formatter:on
+  }
+
+  @Test(description = "Check if the given phone number satisfies the  internationally recognized standard E164 for telephone numbers anywhere in the world.")
+  public void checkE164PhoneNumberFormatSatisfication() throws Exception {
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
+    GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
+    // @formatter:off
+     googleSearchPage.gotoGooglePage()
+                     .searchOfficeNumber()
+                     .verifySearchAndClick()
+                     .waitOnDRCustomerSupportPage()
+                     .readNumberAndVerifyE164StdSatisfied();
   // @formatter:on
   }
 

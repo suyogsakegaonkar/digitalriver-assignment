@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------------
-	DigitalRiver Assignment
+	DigitalRiver Assignment 
 ---------------------------------------------------------------------------------------------------------
 1. Project framework is a hybrid framework.
 	- data driven
@@ -15,7 +15,7 @@
    
 3. All scenarios have a comman Data.xml
    i.e. src/main/resources/xml/Data.xml supported with a src/main/resources/xsd/DataSet.xsd
-	When we need to add a new dataset for a specific existing test scenario, add it to Data.xml
+	When we need to add a new dataset for a specific existing test scenario, add it to Data.xml.
 	When we want to dataset for new test scenario, we need to add new complextype in DataSet.xsd and run "mvn clean install".
 	This will create classes for each complextype. 
 	i.e. src/test/generated
@@ -39,8 +39,11 @@ e.g.
   // @formatter:on
   }
 ``` 
+	Description for each test is provided in the @Test annotation.
 
+6. When we add a different test scenario, and wish to execute those testcases, include the test class in the testng.xml present in working directory.
 
+7. All the test are configured to run in firefox browser.
 ---------------------------------------------------------------------------------------------------------
 	Pre-Requisites for setup:
 ---------------------------------------------------------------------------------------------------------
@@ -55,7 +58,7 @@ https://gist.github.com/suyogsakegaonkar/1c55d443c76c3005214d
 4. Recommended editor - Eclipse
 5. Install maven plugin, if not pre-installed in eclipse.
 6. All the dependant libraries are added to pom.xml. No dependant jar required to download.
-
+7. Firefox browser.
 ---------------------------------------------------------------------------------------------------------
 	How to run test?
 ---------------------------------------------------------------------------------------------------------

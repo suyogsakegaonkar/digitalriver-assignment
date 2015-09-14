@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="25.385" tests="5" errors="0" skipped="0" failures="3">
+<testsuite name="TestSuite" time="21.903" tests="6" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib"/>
@@ -61,31 +61,32 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="checkCountryCodeForNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="6.847"/>
-  <testcase name="checkIsPossibleNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="4.885"/>
-  <testcase name="checkIsValidNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="4.787">
+  <testcase name="checkCountryCodeForNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.898"/>
+  <testcase name="checkE164PhoneNumberFormatSatisfication" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.644"/>
+  <testcase name="checkIsPossibleNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.448"/>
+  <testcase name="checkIsValidNumber" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.638">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:288)
 	at org.testng.Assert.assertEquals(Assert.java:298)
-	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:48)
+	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:62)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:49)
 </failure>
   </testcase>
-  <testcase name="checkNumberType" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="4.436">
+  <testcase name="checkNumberType" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.737">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:288)
 	at org.testng.Assert.assertEquals(Assert.java:298)
-	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:89)
+	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:116)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:90)
 </failure>
   </testcase>
-  <testcase name="checkOfflineGeocoderLocation" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="4.43">
+  <testcase name="checkOfflineGeocoderLocation" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" time="3.538">
     <failure message="expected [Germany] but found []" type="java.lang.AssertionError">java.lang.AssertionError: expected [Germany] but found []
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
@@ -93,7 +94,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
 	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:76)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:77)
 </failure>
   </testcase>
 </testsuite>
