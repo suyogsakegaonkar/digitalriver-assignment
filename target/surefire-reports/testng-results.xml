@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="3" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Example test run" duration-ms="31331" started-at="2015-09-14T15:16:03Z" finished-at="2015-09-14T15:16:34Z">
+  <suite name="Example test run" duration-ms="34328" started-at="2015-09-14T17:01:22Z" finished-at="2015-09-14T17:01:56Z">
     <groups>
     </groups>
-    <test name="Simple Test" duration-ms="31331" started-at="2015-09-14T15:16:03Z" finished-at="2015-09-14T15:16:34Z">
+    <test name="Simple Test" duration-ms="34328" started-at="2015-09-14T17:01:22Z" finished-at="2015-09-14T17:01:56Z">
       <class name="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="3207" started-at="2015-09-14T20:46:03Z" finished-at="2015-09-14T20:46:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="2390" started-at="2015-09-14T22:31:22Z" finished-at="2015-09-14T22:31:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkCountryCodeForNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkCountryCodeForNumber" duration-ms="5178" started-at="2015-09-14T20:46:06Z" description="Validates the country code for a phone number." finished-at="2015-09-14T20:46:11Z">
+        <test-method status="PASS" signature="checkCountryCodeForNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkCountryCodeForNumber" duration-ms="6846" started-at="2015-09-14T22:31:24Z" description="Validates the country code for a phone number." finished-at="2015-09-14T22:31:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCountryCodeForNumber -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="78" started-at="2015-09-14T20:46:11Z" finished-at="2015-09-14T20:46:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="78" started-at="2015-09-14T22:31:31Z" finished-at="2015-09-14T22:31:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1529" started-at="2015-09-14T20:46:11Z" finished-at="2015-09-14T20:46:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1624" started-at="2015-09-14T22:31:31Z" finished-at="2015-09-14T22:31:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkIsPossibleNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkIsPossibleNumber" duration-ms="4203" started-at="2015-09-14T20:46:13Z" description="Check whether a phone number is a possible number given a number in the form of a string, and the region where the number could be dialed from." finished-at="2015-09-14T20:46:17Z">
+        <test-method status="PASS" signature="checkIsPossibleNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkIsPossibleNumber" duration-ms="4884" started-at="2015-09-14T22:31:33Z" description="Check whether a phone number is a possible number given a number in the form of a string, and the region where the number could be dialed from." finished-at="2015-09-14T22:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIsPossibleNumber -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="78" started-at="2015-09-14T20:46:17Z" finished-at="2015-09-14T20:46:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="69" started-at="2015-09-14T22:31:38Z" finished-at="2015-09-14T22:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1545" started-at="2015-09-14T20:46:17Z" finished-at="2015-09-14T20:46:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1518" started-at="2015-09-14T22:31:38Z" finished-at="2015-09-14T22:31:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="checkIsValidNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkIsValidNumber" duration-ms="4120" started-at="2015-09-14T20:46:19Z" description="Tests whether a phone number matches a valid pattern." finished-at="2015-09-14T20:46:23Z">
+        <test-method status="FAIL" signature="checkIsValidNumber()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkIsValidNumber" duration-ms="4785" started-at="2015-09-14T22:31:39Z" description="Tests whether a phone number matches a valid pattern." finished-at="2015-09-14T22:31:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -48,7 +48,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:288)
 	at org.testng.Assert.assertEquals(Assert.java:298)
 	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:45)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,15 +82,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIsValidNumber -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="73" started-at="2015-09-14T20:46:23Z" finished-at="2015-09-14T20:46:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="71" started-at="2015-09-14T22:31:44Z" finished-at="2015-09-14T22:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1529" started-at="2015-09-14T20:46:23Z" finished-at="2015-09-14T20:46:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1503" started-at="2015-09-14T22:31:44Z" finished-at="2015-09-14T22:31:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="checkNumberType()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkNumberType" duration-ms="4058" started-at="2015-09-14T20:46:24Z" description="Gets the type of a phone number." finished-at="2015-09-14T20:46:28Z">
+        <test-method status="FAIL" signature="checkNumberType()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkNumberType" duration-ms="4435" started-at="2015-09-14T22:31:46Z" description="Gets the type of a phone number." finished-at="2015-09-14T22:31:50Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -103,7 +103,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:288)
 	at org.testng.Assert.assertEquals(Assert.java:298)
 	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:86)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:89)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,15 +137,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNumberType -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="76" started-at="2015-09-14T20:46:28Z" finished-at="2015-09-14T20:46:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="70" started-at="2015-09-14T22:31:50Z" finished-at="2015-09-14T22:31:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1489" started-at="2015-09-14T20:46:29Z" finished-at="2015-09-14T20:46:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="setUp" is-config="true" duration-ms="1533" started-at="2015-09-14T22:31:50Z" finished-at="2015-09-14T22:31:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="checkOfflineGeocoderLocation()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkOfflineGeocoderLocation" duration-ms="4070" started-at="2015-09-14T20:46:30Z" description="Checks the offlibe geocoder location for a phone number." finished-at="2015-09-14T20:46:34Z">
+        <test-method status="FAIL" signature="checkOfflineGeocoderLocation()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="checkOfflineGeocoderLocation" duration-ms="4429" started-at="2015-09-14T22:31:52Z" description="Checks the offlibe geocoder location for a phone number." finished-at="2015-09-14T22:31:56Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Germany] but found []]]>
@@ -158,7 +158,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
 	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)
-	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:73)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -192,7 +192,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOfflineGeocoderLocation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="72" started-at="2015-09-14T20:46:34Z" finished-at="2015-09-14T20:46:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.suyog.digitalriver.tests.VerifyPhoneNumberTests@6093dd95]" name="tearDown" is-config="true" duration-ms="75" started-at="2015-09-14T22:31:56Z" finished-at="2015-09-14T22:31:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

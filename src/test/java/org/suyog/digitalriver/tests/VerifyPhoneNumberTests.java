@@ -25,7 +25,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
 
   @Test(description = "Validates the country code for a phone number.")
   public void checkCountryCodeForNumber() throws Exception {
-    excelData = excelReader.getExcelTestScenario(testDataId, getExcelPath());
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
     GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
     // @formatter:off
     googleSearchPage.gotoGooglePage()
@@ -38,7 +38,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
 
   @Test(description = "Tests whether a phone number matches a valid pattern.")
   public void checkIsValidNumber() throws Exception {
-    excelData = excelReader.getExcelTestScenario(testDataId, getExcelPath());
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
     GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
     // @formatter:off
      googleSearchPage.gotoGooglePage()
@@ -52,7 +52,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
   @Test(
       description = "Check whether a phone number is a possible number given a number in the form of a string, and the region where the number could be dialed from.")
   public void checkIsPossibleNumber() throws Exception {
-    excelData = excelReader.getExcelTestScenario(testDataId, getExcelPath());
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
     GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
     // @formatter:off
      googleSearchPage.gotoGooglePage()
@@ -66,7 +66,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
   @Test(description = "Checks the offlibe geocoder location for a phone number.")
   public void checkOfflineGeocoderLocation() throws Exception {
 
-    excelData = excelReader.getExcelTestScenario(testDataId, getExcelPath());
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
     GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
     // @formatter:off
      googleSearchPage.gotoGooglePage()
@@ -79,7 +79,7 @@ public class VerifyPhoneNumberTests extends AbstractSeleniumTestcase {
 
   @Test(description = "Gets the type of a phone number.")
   public void checkNumberType() throws Exception {
-    excelData = excelReader.getExcelTestScenario(testDataId, getExcelPath());
+    excelData = excelReader.getExcelTestData(testDataId, getExcelPath());
     GoogleSearchPage googleSearchPage = new GoogleSearchPage(excelData, driver);
     // @formatter:off
      googleSearchPage.gotoGooglePage()

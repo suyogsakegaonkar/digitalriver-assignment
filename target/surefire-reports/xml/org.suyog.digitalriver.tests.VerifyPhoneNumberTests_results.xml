@@ -4,9 +4,9 @@
            failures="3"
            errors="0"
            skipped="0"
-           time="21.629">
+           time="25.379">
   <properties />
-            <testcase name="checkNumberType" time="4.058" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+            <testcase name="checkNumberType" time="4.435" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -17,7 +17,7 @@
   org.testng.Assert.assertEquals(Assert.java:288)
   org.testng.Assert.assertEquals(Assert.java:298)
   org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)
-  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:86)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:89)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,7 +49,7 @@
       </failure>
 
           </testcase>
-            <testcase name="checkIsValidNumber" time="4.120" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+            <testcase name="checkIsValidNumber" time="4.785" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -60,7 +60,7 @@
   org.testng.Assert.assertEquals(Assert.java:288)
   org.testng.Assert.assertEquals(Assert.java:298)
   org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)
-  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:45)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:48)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,7 +92,7 @@
       </failure>
 
           </testcase>
-            <testcase name="checkOfflineGeocoderLocation" time="4.070" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+            <testcase name="checkOfflineGeocoderLocation" time="4.429" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
                 <failure type="java.lang.AssertionError"
                   message="expected [Germany] but found []"
               >
@@ -103,7 +103,7 @@
   org.testng.Assert.assertEquals(Assert.java:178)
   org.testng.Assert.assertEquals(Assert.java:188)
   org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)
-  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:73)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:76)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,7 +137,7 @@
           </testcase>
   
   
-            <testcase name="checkCountryCodeForNumber" time="5.178" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
-                <testcase name="checkIsPossibleNumber" time="4.203" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
+            <testcase name="checkCountryCodeForNumber" time="6.846" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
+                <testcase name="checkIsPossibleNumber" time="4.884" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
       
 </testsuite>

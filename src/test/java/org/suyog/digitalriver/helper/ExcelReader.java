@@ -13,8 +13,12 @@ import org.apache.poi.ss.usermodel.Row;
 
 public class ExcelReader {
 
-
-  public HashMap<String, String> getExcelTestScenario(String testId, String excelFilePath) {
+  /*
+   * getExcelTestData method reads the excelsheet provided for the specific testcases,
+   * and returns a hashmap for specific dataSetId.
+   * Refer data/VerifyPhoneNumberTests.xls for sample.
+   */
+  public HashMap<String, String> getExcelTestData(String dataSetId, String excelFilePath) {
     try {
       int testCaseColumn = -1;
       FileInputStream file = new FileInputStream(new File(excelFilePath));
@@ -26,7 +30,7 @@ public class ExcelReader {
       while (cellIterator.hasNext()) {
         Cell cell = cellIterator.next();
         cell.setCellType(Cell.CELL_TYPE_STRING);
-        if (cell.getStringCellValue().equals(testId)) {
+        if (cell.getStringCellValue().equals(dataSetId)) {
           testCaseColumn = cell.getColumnIndex();
           break;
         }
