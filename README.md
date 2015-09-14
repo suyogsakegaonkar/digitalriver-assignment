@@ -58,6 +58,7 @@ https://gist.github.com/suyogsakegaonkar/1c55d443c76c3005214d
 5. Install maven plugin, if not pre-installed in eclipse.
 6. All the dependant libraries are added to pom.xml. No dependant jar required to download.
 7. Firefox browser.
+
 ---------------------------------------------------------------------------------------------------------
 	How to run test?
 ---------------------------------------------------------------------------------------------------------
