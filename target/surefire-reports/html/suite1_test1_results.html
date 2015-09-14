@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Simple Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Simple Test</h1>
+<p>
+  Test duration: 31.305s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">org.suyog.digitalriver.tests.VerifyPhoneNumberTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Tests whether a phone number matches a valid pattern.">checkIsValidNumber</span>
+      </td>
+  <td class="duration">
+    4.120s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:496)<br />
+              org.testng.Assert.assertEquals(Assert.java:125)<br />
+              org.testng.Assert.assertEquals(Assert.java:288)<br />
+              org.testng.Assert.assertEquals(Assert.java:298)<br />
+              org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)<br />
+              org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:45)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:773)<br />
+              org.testng.TestRunner.run(TestRunner.java:623)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+              org.testng.TestNG.run(TestNG.java:1018)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Gets the type of a phone number.">checkNumberType</span>
+      </td>
+  <td class="duration">
+    4.058s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:496)<br />
+              org.testng.Assert.assertEquals(Assert.java:125)<br />
+              org.testng.Assert.assertEquals(Assert.java:288)<br />
+              org.testng.Assert.assertEquals(Assert.java:298)<br />
+              org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)<br />
+              org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:86)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:773)<br />
+              org.testng.TestRunner.run(TestRunner.java:623)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+              org.testng.TestNG.run(TestNG.java:1018)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Checks the offlibe geocoder location for a phone number.">checkOfflineGeocoderLocation</span>
+      </td>
+  <td class="duration">
+    4.070s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Germany] but found []</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:496)<br />
+              org.testng.Assert.assertEquals(Assert.java:125)<br />
+              org.testng.Assert.assertEquals(Assert.java:178)<br />
+              org.testng.Assert.assertEquals(Assert.java:188)<br />
+              org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)<br />
+              org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:73)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:773)<br />
+              org.testng.TestRunner.run(TestRunner.java:623)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+              org.testng.TestNG.run(TestNG.java:1018)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">org.suyog.digitalriver.tests.VerifyPhoneNumberTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Validates the country code for a phone number.">checkCountryCodeForNumber</span>
+      </td>
+  <td class="duration">
+    5.178s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Check whether a phone number is a possible number given a number in the form of a string, and the region where the number could be dialed from.">checkIsPossibleNumber</span>
+      </td>
+  <td class="duration">
+    4.203s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

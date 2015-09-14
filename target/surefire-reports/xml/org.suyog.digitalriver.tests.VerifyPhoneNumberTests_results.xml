@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Simple Test"
+           tests="5"
+           failures="3"
+           errors="0"
+           skipped="0"
+           time="21.629">
+  <properties />
+            <testcase name="checkNumberType" time="4.058" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:496)
+  org.testng.Assert.assertEquals(Assert.java:125)
+  org.testng.Assert.assertEquals(Assert.java:288)
+  org.testng.Assert.assertEquals(Assert.java:298)
+  org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:86)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:773)
+  org.testng.TestRunner.run(TestRunner.java:623)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+  org.testng.SuiteRunner.run(SuiteRunner.java:259)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+  org.testng.TestNG.run(TestNG.java:1018)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="checkIsValidNumber" time="4.120" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:496)
+  org.testng.Assert.assertEquals(Assert.java:125)
+  org.testng.Assert.assertEquals(Assert.java:288)
+  org.testng.Assert.assertEquals(Assert.java:298)
+  org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:45)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:773)
+  org.testng.TestRunner.run(TestRunner.java:623)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+  org.testng.SuiteRunner.run(SuiteRunner.java:259)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+  org.testng.TestNG.run(TestNG.java:1018)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="checkOfflineGeocoderLocation" time="4.070" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [Germany] but found []"
+              >
+<![CDATA[java.lang.AssertionError: expected [Germany] but found []
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:496)
+  org.testng.Assert.assertEquals(Assert.java:125)
+  org.testng.Assert.assertEquals(Assert.java:178)
+  org.testng.Assert.assertEquals(Assert.java:188)
+  org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)
+  org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:73)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:773)
+  org.testng.TestRunner.run(TestRunner.java:623)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+  org.testng.SuiteRunner.run(SuiteRunner.java:259)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+  org.testng.TestNG.run(TestNG.java:1018)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="checkCountryCodeForNumber" time="5.178" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
+                <testcase name="checkIsPossibleNumber" time="4.203" classname="org.suyog.digitalriver.tests.VerifyPhoneNumberTests" />
+      
+</testsuite>

@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 31.879 sec <<< FAILURE! - in TestSuite
+checkIsValidNumber(org.suyog.digitalriver.tests.VerifyPhoneNumberTests)  Time elapsed: 4.126 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyIsValidNumber(DRCustomerSupportPage.java:63)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkIsValidNumber(VerifyPhoneNumberTests.java:45)
+
+checkNumberType(org.suyog.digitalriver.tests.VerifyPhoneNumberTests)  Time elapsed: 4.059 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyNumberType(DRCustomerSupportPage.java:121)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkNumberType(VerifyPhoneNumberTests.java:86)
+
+checkOfflineGeocoderLocation(org.suyog.digitalriver.tests.VerifyPhoneNumberTests)  Time elapsed: 4.07 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Germany] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at org.suyog.digitalriver.pageobjects.DRCustomerSupportPage.readNumberAndVerifyOfflineGeocoderLocation(DRCustomerSupportPage.java:96)
+	at org.suyog.digitalriver.tests.VerifyPhoneNumberTests.checkOfflineGeocoderLocation(VerifyPhoneNumberTests.java:73)
+

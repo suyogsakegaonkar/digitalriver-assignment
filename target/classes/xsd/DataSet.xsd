@@ -1,0 +1,35 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/DataSet"
+	xmlns:tns="http://www.example.org/DataSet" elementFormDefault="qualified">
+
+	<element name="pageData">
+		<complexType>
+			<sequence>
+				<element name="countryDetails" type="tns:countryDetails"
+					maxOccurs="unbounded" minOccurs="0" />
+				<element name="googleSearch" type="tns:googleSearch"
+					maxOccurs="unbounded" minOccurs="0" />
+
+
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="countryDetails">
+		<sequence>
+			<element name="countryName" type="string" />
+			<element name="isoCode" type="string" />
+			<element name="callingCode" type="string" />
+		</sequence>
+		<attribute name="id" type="ID"></attribute>
+	</complexType>
+
+	<complexType name="googleSearch">
+		<sequence>
+			<element name="searchText" type="string" />
+			<element name="linkDescText" type="string" />
+			<element name="linkText" type="string" />
+		</sequence>
+		<attribute name="id" type="ID"></attribute>
+	</complexType>
+
+</schema>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<pageData xmlns="http://www.example.org/DataSet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/DataSet ../src/test/resources/xsd/DataSet.xsd ">
+
+	<countryDetails id="germany">
+		<countryName>Germany</countryName>
+		<isoCode>DE</isoCode>
+		<callingCode>49</callingCode>
+	</countryDetails>
+
+	<googleSearch id="germany">
+		<searchText>phone number of the german digital river office</searchText>
+		<linkDescText>phone,number,germany,office</linkDescText>
+		<linkText>digital,river</linkText>
+	</googleSearch>
+
+</pageData>
