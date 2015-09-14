@@ -22,8 +22,9 @@
 	Then add data to the Data.xml
 
 4. All the pages related in the test scenario have a separate class. (page object model)
-
-5. Each testcase in test scenario class file is exhibited as follows:
+5. When we add a different test scenario, and wish to execute those testcases, include the test class in the testng.xml present in working directory.
+6. All the test are configured to run in firefox browser.
+7. Each testcase in test scenario class file is exhibited as follows:
 e.g.
 ```
   @Test(description = "Tests whether a phone number matches a valid pattern.")
@@ -41,9 +42,7 @@ e.g.
 ``` 
 	Description for each test is provided in the @Test annotation.
 
-6. When we add a different test scenario, and wish to execute those testcases, include the test class in the testng.xml present in working directory.
 
-7. All the test are configured to run in firefox browser.
 ---------------------------------------------------------------------------------------------------------
 	Pre-Requisites for setup:
 ---------------------------------------------------------------------------------------------------------
