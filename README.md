@@ -65,4 +65,3 @@ https://gist.github.com/suyogsakegaonkar/1c55d443c76c3005214d
 4. Then run "mvn clean install" to run the test.
 5. View html report at 
 	target/surefire-reports/index.html
----------------------------------------------------------------------------------------------------------
